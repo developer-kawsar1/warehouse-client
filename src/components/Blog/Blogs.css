@@ -1,0 +1,21 @@
+.GeneratedTable{
+    width: 100%;
+  
+    border-collapse: collapse; 
+    text-align: left;
+    padding: 20px;
+} 
+.GeneratedTable , th , td{
+    padding: 10px;
+  
+}
+.GeneratedTable th{
+    background-color: blueviolet;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    
+} 
+th , td{
+    border-bottom: 1px solid gray; 
+    margin-bottom: 2px;
+}
