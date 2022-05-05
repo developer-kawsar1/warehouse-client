@@ -1,0 +1,44 @@
+.banner{
+    height: 80vh;
+    background-color: red;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9),
+    rgba(0,0,0,0.5)),
+    url('../../../images/banner-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -5%;
+} 
+.banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto; 
+    text-align: center;
+
+}
+.banner-content h1{
+    font-weight: 100;
+    margin: 20px 0;
+}
+.banner-content p{
+    font-weight: thin;
+    line-height: 2;
+   
+}
+.banner-btn{
+    background-color: rgb(216, 158, 13);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+}

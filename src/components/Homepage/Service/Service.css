@@ -1,0 +1,60 @@
+.service{
+    padding: 100px 0; 
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9),
+    rgba(0,0,0,0.5)),
+    url('../../../images/banner-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    min-height: 80vh;
+    color: #fff;
+    padding: 30px;
+}   
+.section-title h2{
+    font-size: 30px; 
+    margin-bottom: 25px;
+    position: relative;
+}
+.section-title h2::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: chocolate; 
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.sercive-container{
+   display: flex;
+   justify-content: space-around;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.single-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    width: 60%;
+    margin-bottom: 20px;
+} 
+.single-top img{
+    
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+    .sercive-container{
+        flex-direction: column;
+    } 
+    .single-service{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Spoken English",
+        "price": "300",
+        "description": "Speaking English allows you to actually broaden your world, from job opportunities to the ability to relate to people from every country.",
+        "img": "https://i.ibb.co/0MJcKQR/spoken.jpg",
+        "supplier":"mofiz uddin"
+    },
+    {
+        "id": 2,
+        "name": "Basic grammer  ",
+        "price": "100",
+        "description": "Grammar is important because it is the language that makes it possible for us to talk about language. Grammar names the types of words and   word groups that make up sentences not only in English but in any language. ",
+        "img": "https://i.ibb.co/zf9SBJy/grammer.jpg",
+        "supplier":"Abdul koddus"
+    },
+    {
+        "id": 3,
+        "name": "Free hand writting ",
+        "price": "150",
+        "description": "riting things down by hand helps us remember and use the information — even if we never read our notes. Handwriting matters — even if you never read it. Writing things down by hand helps us remember and use the information",
+        "img": "https://i.ibb.co/HKvxwXK/hand-writting.jpg",
+        "supplier":"Zomir ali"
+    },
+    {
+        "id": 4,
+        "name": "Improving Reading skill ",
+        "price": "180",
+        "description": "Reading is Essential and serves as a basic building block for learning, regardless of the school subject, be it language arts or even math. In daily life, the need to read things such as street signs or prescriptions proves reading is also an important life skill. ",
+        "img": "https://i.ibb.co/C62QkFQ/reading.jpg",
+        "supplier":"Abdur rahman "
+    },
+    {
+        "id": 5,
+        "name": "Admission course ",
+        "price": "100",
+        "description": " I will help you to join your Dream University. without a mentor it is not possible for you to be addmited in your dream university . So stay with us to fullfill your Dream",
+        "img": "https://i.ibb.co/82ZYxSb/admission.jpg",
+        "supplier":"Main uddin"
+    }, 
+  {
+        "id": 6,
+        "name": "Improving listening skills  ",
+        "price": "100",
+        "description": " Listening skills allow one to make sense of and understand what another person is saying. In other words, listening skills allow people to understand what someone is talking about-the meaning behind the words. Good listening skills make workers more productive.",
+        "img": "https://i.ibb.co/25rBPN0/listening-skill.png",
+        "supplier":"Mir Hossain "
+    }
+   
+] 
+
