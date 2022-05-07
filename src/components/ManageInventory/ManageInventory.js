@@ -4,11 +4,20 @@ import { Link } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 
 const ManageInventory = () => { 
-    const [products]=useProducts() 
+    const [products,setProducts]=useProducts() 
     const handelDelete=(id)=>{
         const proceed=window.confirm('are you sure ?') 
-        if(proceed){
-
+        if(proceed){ 
+            const url=`http://localhost:5000/product/${id}`
+          fetch(url,{
+              method:'DELETE'
+          }) 
+          .then(res=>res.json())
+          .then(data=>{
+              console.log(data); 
+              const remaining=products.filter(product=>product._id !==id) 
+              setProducts(remaining)
+          })
         }
     }
     return (
