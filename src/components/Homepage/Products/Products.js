@@ -13,11 +13,11 @@ const Products = () => {
         <> 
 
            <div>
-             <h3 className='services-title'>LESSONS</h3> 
+             <h3 className='services-title'>Products</h3> 
 
               <div className="product-container">
               {
-                products.map(product=><Product key={product._id} product={product} />)
+                products.slice(0, 6).map(product=><Product key={product._id} product={product} />)
             }
               </div> 
 

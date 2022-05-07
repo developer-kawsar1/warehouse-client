@@ -1,0 +1,25 @@
+.detail-table{
+ border-collapse: collapse;
+} 
+.detail-table tr td{
+    border: 1px solid gray; 
+    border-collapse: collapse;
+} 
+.detail-table tr{
+    background-color: aliceblue;
+}
+.detail-table tr:nth-child(even){
+    background-color: #fff;
+} 
+.info-container{
+    display: flex;
+} 
+.info-container .img-div{
+    flex-basis: 30%;
+} 
+.info-container table{
+    flex-grow: 1;
+}
+.img-div img{
+    width: 100%;
+}
