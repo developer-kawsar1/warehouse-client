@@ -5,7 +5,20 @@
     padding: 0 5%;
    
 }
-
+.more-btn-div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+} 
+.more-btn-div a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: crimson;
+    margin: 10px 0;
+    font-weight: bold;
+}
 @media only screen and (max-width: 600px) {
     .product-container {
         grid-template-columns: 1fr;

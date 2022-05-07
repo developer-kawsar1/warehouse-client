@@ -1,51 +1,57 @@
 [
     {
         "id": 1,
-        "name": "Spoken English",
+        "name": "Gala Apple",
         "price": "300",
-        "description": "Speaking English allows you to actually broaden your world, from job opportunities to the ability to relate to people from every country.",
-        "img": "https://i.ibb.co/0MJcKQR/spoken.jpg",
-        "supplier":"mofiz uddin"
+        "description": "We believe in your satisfaction and get Gala apple from grab grocery with a mild and sweet pleasant flavor. Overall orange in colour It's Parentage: Golden Delicious and Kidd's Orange Red with good quality. It is one of the most favorite fruits not only in Bangladesh but also in the world.",
+        "img": "https://i.ibb.co/Tv21881/gala-apple-50-gm-1-kg.webp",
+        "supplier":"mofiz uddin",
+        "quantity":1
     },
     {
         "id": 2,
-        "name": "Basic grammer  ",
-        "price": "100",
-        "description": "Grammar is important because it is the language that makes it possible for us to talk about language. Grammar names the types of words and   word groups that make up sentences not only in English but in any language. ",
-        "img": "https://i.ibb.co/zf9SBJy/grammer.jpg",
-        "supplier":"Abdul koddus"
+        "name": "Anaros (Pineapple)  ",
+        "price": "49",
+        "description": "Pineapples are one of the most popular tropical fruits in the world.Fresh pineapple is low in calories. Nonetheless, it is a storehouse for several unique health promoting compounds, minerals and vitamins that are essential for optimum health.",
+        "img": "https://i.ibb.co/Kxn1G46/anaros-pineapple-1-pcs.webp",
+        "supplier":"Abdul koddus" ,
+        "quantity":1
     },
     {
         "id": 3,
-        "name": "Free hand writting ",
-        "price": "150",
-        "description": "riting things down by hand helps us remember and use the information — even if we never read our notes. Handwriting matters — even if you never read it. Writing things down by hand helps us remember and use the information",
-        "img": "https://i.ibb.co/HKvxwXK/hand-writting.jpg",
-        "supplier":"Zomir ali"
+        "name": "Lomba Kalo Begun (Long Brinjal Black)  ",
+        "price": "49",
+        "description": "Brinjals are mildly sweet, moist and never bitter. Because of their small size, the silky flesh is especially tender and will cook quickly. Try them sliced, brushed with olive oil and salt, and grilled or roasted.",
+        "img": "https://i.ibb.co/D1dwdCJ/lomba-kalo-begun-long-brinjal-black-25-gm-500-gm.webp",
+        "supplier":"Zomir ali",
+        "quantity":1
     },
     {
         "id": 4,
-        "name": "Improving Reading skill ",
-        "price": "180",
-        "description": "Reading is Essential and serves as a basic building block for learning, regardless of the school subject, be it language arts or even math. In daily life, the need to read things such as street signs or prescriptions proves reading is also an important life skill. ",
-        "img": "https://i.ibb.co/C62QkFQ/reading.jpg",
-        "supplier":"Abdur rahman "
+        "name": "Deshi peyaj ",
+        "price": "40",
+        "description": "Though all vegetables are important for health, certain kinds offer unique benefits .  Onions are members of the Allium genus of flowering plants that also includes garlic, shallots, leeks and chives. These vegetables contain various vitamins, minerals and potent ",
+        "img": "https://i.ibb.co/Ydr3L44/deshi-peyaj-local-onion-50-gm-1-kg.webp",
+        "supplier":"Abdur rahman " ,
+        "quantity":1
     },
     {
         "id": 5,
-        "name": "Admission course ",
-        "price": "100",
-        "description": " I will help you to join your Dream University. without a mentor it is not possible for you to be addmited in your dream university . So stay with us to fullfill your Dream",
-        "img": "https://i.ibb.co/82ZYxSb/admission.jpg",
-        "supplier":"Main uddin"
+        "name": "Red tamato ",
+        "price": "50",
+        "description": "The tomato is consumed in diverse ways, including raw, as an ingredient in many dishes, sauces, salads, and drinks. While it is botanically a fruit, it is considered a vegetable for culinary purposes. The fruit is rich in lycopene, which may have beneficial health effects.",
+        "img": "https://i.ibb.co/VChPgRD/red-tomato-25-gm-500-gm.webp",
+        "supplier":"Main uddin" ,
+        "quantity":1
     }, 
   {
         "id": 6,
-        "name": "Improving listening skills  ",
-        "price": "100",
-        "description": " Listening skills allow one to make sense of and understand what another person is saying. In other words, listening skills allow people to understand what someone is talking about-the meaning behind the words. Good listening skills make workers more productive.",
-        "img": "https://i.ibb.co/25rBPN0/listening-skill.png",
-        "supplier":"Mir Hossain "
+        "name": "19  ",
+        "price": "19",
+        "description": "potassium, vitamins, etc. Regular potato provides 9-10 percent of your daily need. Regular potatoes offer more of this nutrient which helps control your blood pressure. Make a good curry with regular potato. You can make French fries and you can enjoy with your family members.",
+        "img": "https://i.ibb.co/JcqgjhW/potato-regular-50-gm-1-kg.webp",
+        "supplier":"Mir Hossain " , 
+        "quantity":1
     }
    
 ] 

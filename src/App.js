@@ -10,6 +10,11 @@ import Footer from './components/Shared/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 import Home from './components/Homepage/Home';
 import ProductDetail from './components/Homepage/ProductDetail/ProductDetail';
+import Login from './components/Login/Login';
+import RequireAuth from './components/RequireAuth/RequireAuth';
+import Registration from './components/Registration/Registration';
+import ManageInventory from './components/ManageInventory/ManageInventory';
+import AddProduct from './components/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -22,7 +27,41 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path='/blog' element={<Blog />}></Route>  
               <Route path='*' element={<NotFound/>}></Route>  
-              <Route path='/inventory/:id' element={<ProductDetail/>}></Route>
+              <Route path='/login' element={<Login />}></Route>  
+              
+              <Route path='/registration' element={<Registration />}></Route>  
+              
+              <Route path='/inventory/:id' element={
+
+                
+                    <RequireAuth>
+                      <ProductDetail/>
+                    </RequireAuth>
+           
+
+              }> 
+              </Route>
+              <Route path='/addproduct' element={
+
+                
+                    <RequireAuth>
+                      <AddProduct />
+                    </RequireAuth>
+           
+
+              }> 
+              </Route>
+              <Route path='/manage' element={
+
+                
+                    <RequireAuth>
+                   <ManageInventory />
+                    </RequireAuth>
+           
+
+              }> 
+              </Route>
+             
         </Routes>  
 
         </div>   

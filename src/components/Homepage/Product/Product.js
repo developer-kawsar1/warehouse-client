@@ -4,7 +4,7 @@ import './Product.css'
 
 const Product = ({product}) => {  
     const navigate=useNavigate()
-    const {id,name,price,description,img ,supplier}=product
+    const {_id,name,price,description,img ,supplier}=product
     return (
         <div className='product'>
         <h2>{name}</h2> 
@@ -14,7 +14,7 @@ const Product = ({product}) => {
            <p className='supplier'><b>supplier : {supplier}</b></p>
           <div className='cart-footer'>
               <p>${price}</p>
-              <button onClick={()=>navigate('./inventory/'+id)}>Update </button>
+              <button onClick={()=>navigate('./inventory/'+_id)}>Update </button>
           </div>
     </div>
     );

@@ -1,0 +1,22 @@
+
+.service-manage{
+    border: 1px solid rgb(170, 163, 163);
+    margin: 5px 5%;
+    padding: 10px;
+}
+
+.add-new-product-div{
+    display: flex;
+     justify-content: flex-end;
+     padding: 0 5%;
+
+} 
+.add-new-product-div a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: crimson;
+    margin: 30px 0;
+} 
