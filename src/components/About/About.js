@@ -1,4 +1,5 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
 import './About.css'
 const About = () => {
     return (
@@ -9,7 +10,7 @@ const About = () => {
                 <p> Here you will find a lot of grocery items stocked. you can add and delete any product. First of all You need to login to make any change of this website  
                     .Without login or registration you can not do anything in this website . 
                      </p>
-                 <a class="hero-btn red-btn" href="">Explore Now</a>
+                  <Link to="/">Explore Now</Link>
              </div>
              <div class="about-col">
                  <img src="images/about.jpg" alt="" />

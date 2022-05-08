@@ -3,8 +3,10 @@ import { Link, useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
 const ProductDetail = () => {  
-    const [product,setProduct]=useState({}) 
-    const [counter,setCounter]=useState(0)  
+    const [product,setProduct]=useState({})  
+    // const [product,setProduct]=useState({}) 
+    const {quantity}=product
+
      
      
   
@@ -25,13 +27,15 @@ const ProductDetail = () => {
 
 
 const deliverbtnClick=()=>{ 
-    setCounter(product.quantity-1) 
-    console.log(counter);
+    let newQuantity=quantity-1 
+    const newProduct={...product,quantity:newQuantity} 
+    setProduct(newProduct)
+  console.log("new product id "+newProduct);
     //  setCount(count)
     const url=`http://localhost:5000/product/${id}`  ;
     fetch(url, {
         method: 'PUT',
-        body: JSON.stringify({quantity:counter}),
+        body: JSON.stringify({newProduct}),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
@@ -69,7 +73,7 @@ const deliverbtnClick=()=>{
                      </tr>
                      <tr>
                          <td>Quantity is</td> 
-                         <td>{product.price} </td>
+                         <td>{product.quantity} </td>
                      </tr>
                      <tr>
                          <td>Supplier</td> 
