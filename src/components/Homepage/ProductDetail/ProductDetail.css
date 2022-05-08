@@ -22,4 +22,8 @@
 }
 .img-div img{
     width: 100%;
+} 
+.detail-hader{
+    text-align: center;
+    margin: 50px;
 }

@@ -50,8 +50,8 @@ fetch('http://localhost:5000/product', {
 
     }
     return (
-        <div>
-            <h2>Add product </h2> 
+        <div className='add-product-page'>
+            <h2 className='section-header'>Add product </h2> 
 
 
             <form action="" onSubmit={addProductForm}>

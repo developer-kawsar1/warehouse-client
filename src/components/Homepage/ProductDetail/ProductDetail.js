@@ -48,8 +48,8 @@ const deliverbtnClick=()=>{
     
     return (
         <div> 
-            <h2>You are about to update {product.name}</h2>
-            PRoduct detail page  {id} 
+            <h2 className='section-header'>You are ready  to update {product.name}</h2>
+         
               <div className="info-container"> 
                <div className='img-div'>
                    <img src={product.img} alt="" />

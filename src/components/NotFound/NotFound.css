@@ -10,9 +10,9 @@
 .round{
     height: 150px ;
     width: 150px ;
-    border: 2px solid crimson;
+    border: 2px solid blueviolet;
     border-radius: 50%;
-    color: crimson;
+    color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@
 } 
 .home-btn{
     padding: 10px 20px;
-    border: 1px solid crimson;
+    border: 1px solid blueviolet;
     color: #555;
     background-color: transparent;
     display: inline-block;
@@ -39,6 +39,6 @@
 
 } 
 .home-btn:hover{
-    background-color: crimson;
+    background-color: blueviolet;
     color: #fff;
 }

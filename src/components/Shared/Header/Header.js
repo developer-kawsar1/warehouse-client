@@ -22,6 +22,7 @@ const Header = () => {
           <Link to="/" className='nav-logo'>Grab Grocers </Link> 
           <ul className={click? "nav-menu active" : "nav-menu"}>
             
+            
               <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/about">About</Link></li>
               <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/blog">Blog</Link></li>
               {

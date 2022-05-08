@@ -22,7 +22,7 @@ const ManageInventory = () => {
     }
     return (
         <div>
-            Manage inventory page  
+          <h2 className="section-header">Manage Inventory</h2>
           
    <div className="service-manage">
        <div className="left">
@@ -32,7 +32,8 @@ const ManageInventory = () => {
        <div className="count">
            <p className="price">Price</p>
            <p>Quantity</p>
-       </div>
+       </div> 
+       <p>Action</p>
    </div>
           {
               products.map(product=><div key={product._id} className='service-manage'>  

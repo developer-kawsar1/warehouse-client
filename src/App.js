@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
-import About from "./components/About";
+
 
 import Blog from "./components/Blog/Blog";
 import Header from "./components/Shared/Header/Header";
@@ -15,6 +15,8 @@ import Registration from "./components/Registration/Registration";
 import ManageInventory from "./components/ManageInventory/ManageInventory";
 import AddProduct from "./components/AddProduct/AddProduct";
 import MyItem from "./components/MyItems/MyItem";
+import About from "./components/About/About";
+
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
+        
+          <Route path="/about" element={<About/>}></Route>
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           <Route path="/login" element={<Login />}></Route>
