@@ -9,7 +9,7 @@ const MyItem = () => {
     const handelDelete=(id)=>{
         const proceed=window.confirm('are you sure ?') 
         if(proceed){ 
-            const url=`http://localhost:5000/product/${id}`
+            const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`
           fetch(url,{
               method:'DELETE'
           }) 

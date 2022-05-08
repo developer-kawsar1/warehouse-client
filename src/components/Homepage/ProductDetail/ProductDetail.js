@@ -12,7 +12,7 @@ const ProductDetail = () => {
   
     const {id}=useParams()
     useEffect(()=>{
-        const url=`http://localhost:5000/product/${id}`  ; 
+        const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ; 
         
         fetch(url)
         .then(res=>res.json())
@@ -22,17 +22,18 @@ const ProductDetail = () => {
        
             
         })
-    },[]) 
+    },[product]) 
 
 
 
 const deliverbtnClick=()=>{ 
     let newQuantity=quantity-1 
     const newProduct={...product,quantity:newQuantity} 
-    setProduct(newProduct)
-  console.log("new product id "+newProduct);
+    setProduct(newProduct) 
+console.log(quantity);
+  console.log(newProduct);
     //  setCount(count)
-    const url=`http://localhost:5000/product/${id}`  ;
+    const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ;
     fetch(url, {
         method: 'PUT',
         body: JSON.stringify({newProduct}),
@@ -85,7 +86,9 @@ const deliverbtnClick=()=>{
                          <td> <div> <form action="">
                               <input type="text" placeholder='add quantity' /> 
                               <button>insert</button>
-                             </form></div> <button onClick={deliverbtnClick}>Deliver</button> </td>
+                             </form></div> 
+                             {/* <button onClick={deliverbtnClick}>Deliver</button> */}
+                              </td>
                      </tr>
                   </table>
               </div>

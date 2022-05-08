@@ -20,7 +20,7 @@ const Footer = () => {
                {
                    user[0]?.uid? <p> {user[0].displayName}</p> :<p>nothing </p>
                } 
-               <button onClick={logutManage}>check</button>
+              
            </div>
            </div>
 

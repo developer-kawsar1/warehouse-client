@@ -27,4 +27,13 @@
         justify-content: space-between;
     
     
+} 
+@media(max-width:600px){
+    .about-row{
+        flex-direction: column;
+    } 
+    .about-col{
+        flex-basis: 98%;
+        padding: 30px 2px;
+    }
 }

@@ -16,31 +16,31 @@ const Service = () => {
                             <img src="https://i.ibb.co/SQTcyy9/mt-1508-home-icon1.png" alt="" /> 
                             <h3> Storage</h3>
                         </div> 
-                        <div>
+                        <div className='parag'>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel 
+                                Store safely your product to our website 
                             </p>
                         </div>
                     </div>
                     <div className="single-service">
                         <div className='single-top'>
-                            <img src="https://i.ibb.co/SQTcyy9/mt-1508-home-icon2.png" alt="" /> 
+                            <img src="https://i.ibb.co/hBZ9Thn/mt-1508-home-icon2.png" alt="" /> 
                             <h3> Distribution</h3>
                         </div> 
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel 
+                                You can also distribute product here 
                             </p>
                         </div>
                     </div>
                     <div className="single-service">
                         <div className='single-top'>
-                            <img src="https://i.ibb.co/SQTcyy9/mt-1508-home-icon3.png" alt="" /> 
+                            <img src="https://i.ibb.co/jkLd9jk/mt-1508-home-icon3.png" alt="" /> 
                             <h3> Trucking</h3>
                         </div> 
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel 
+                                Deliver your product safely to your desired destination 
                             </p>
                         </div>
                     </div>

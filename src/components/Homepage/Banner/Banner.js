@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="banner-container">
          <div className="banner-content">
              <h1>
-             Distribution, Storage, Warehousing & Fulfillment
+             Distribution, Storage, Warehousing Delate  & Update
              </h1> 
              <p> 
              Your solution for first class warehousing services for the goods, food, grocery, pharmaceutical and general commodity industries.

@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Gala Apple",
         "price": "300",
         "description": "We believe in your satisfaction and get Gala apple from grab grocery with a mild and sweet pleasant flavor. Overall orange in colour It's Parentage: Golden Delicious and Kidd's Orange Red with good quality. It is one of the most favorite fruits not only in Bangladesh but also in the world.",
@@ -9,7 +8,6 @@
         "quantity":1
     },
     {
-        "id": 2,
         "name": "Anaros (Pineapple)  ",
         "price": "49",
         "description": "Pineapples are one of the most popular tropical fruits in the world.Fresh pineapple is low in calories. Nonetheless, it is a storehouse for several unique health promoting compounds, minerals and vitamins that are essential for optimum health.",
@@ -18,7 +16,6 @@
         "quantity":1
     },
     {
-        "id": 3,
         "name": "Lomba Kalo Begun (Long Brinjal Black)  ",
         "price": "49",
         "description": "Brinjals are mildly sweet, moist and never bitter. Because of their small size, the silky flesh is especially tender and will cook quickly. Try them sliced, brushed with olive oil and salt, and grilled or roasted.",
@@ -27,7 +24,6 @@
         "quantity":1
     },
     {
-        "id": 4,
         "name": "Deshi peyaj ",
         "price": "40",
         "description": "Though all vegetables are important for health, certain kinds offer unique benefits .  Onions are members of the Allium genus of flowering plants that also includes garlic, shallots, leeks and chives. These vegetables contain various vitamins, minerals and potent ",
@@ -36,7 +32,6 @@
         "quantity":1
     },
     {
-        "id": 5,
         "name": "Red tamato ",
         "price": "50",
         "description": "The tomato is consumed in diverse ways, including raw, as an ingredient in many dishes, sauces, salads, and drinks. While it is botanically a fruit, it is considered a vegetable for culinary purposes. The fruit is rich in lycopene, which may have beneficial health effects.",
@@ -45,7 +40,6 @@
         "quantity":1
     }, 
   {
-        "id": 6,
         "name": "19  ",
         "price": "19",
         "description": "potassium, vitamins, etc. Regular potato provides 9-10 percent of your daily need. Regular potatoes offer more of this nutrient which helps control your blood pressure. Make a good curry with regular potato. You can make French fries and you can enjoy with your family members.",

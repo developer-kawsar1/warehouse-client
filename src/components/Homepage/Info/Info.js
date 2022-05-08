@@ -7,7 +7,8 @@ const Info = () => {
              <div className="info-container">
                  <div className="left">
                      <h1> DEPOT Warehousing & Storage</h1> 
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic iusto aspernatur facere reprehenderit excepturi culpa sed repudiandae at fuga, illum cumque lmet, sapiente aliquid a fugit provident doloribus? Officia quam nulla doloribus pariatur reiciendis dolorem repellat veritatis porro. Commodi illum alias reprehenderit enim voluptatum et, eveniet ratione quis dolor mollitia similique nam est natus tempore animi iusto quam eligendi. Alias mollitia nam magni adipisci ex quia placeat reprehenderit consequatur obcaecati quae?</p> 
+                     <p>we store storage grocery data and count quantity. you can add delete data and  update also 
+                         but you need to login fast. lets store a lots of products and try to add more and more producrts </p> 
                      <button className='learn-more'>Learn More </button>
                  </div> 
                  <div className="right">

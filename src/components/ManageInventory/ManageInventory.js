@@ -8,7 +8,7 @@ const ManageInventory = () => {
     const handelDelete=(id)=>{
         const proceed=window.confirm('are you sure ?') 
         if(proceed){ 
-            const url=`http://localhost:5000/product/${id}`
+            const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`
           fetch(url,{
               method:'DELETE'
           }) 
@@ -21,8 +21,11 @@ const ManageInventory = () => {
         }
     }
     return (
-        <div>
-          <h2 className="section-header">Manage Inventory</h2>
+        <div> 
+          <h2 className="section-header">Manage Inventory</h2> 
+          <div className='add-new-product-div'>
+           <Link to="/addproduct">Add new Product</Link>
+        </div>
           
    <div className="service-manage">
        <div className="left">
@@ -51,9 +54,7 @@ const ManageInventory = () => {
               </div>)
           }
 
-        <div className='add-new-product-div'>
-           <Link to="/addproduct">Add new Product</Link>
-        </div>
+      
         </div>
     );
 };
