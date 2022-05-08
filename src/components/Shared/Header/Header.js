@@ -21,7 +21,11 @@ const Header = () => {
               <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/about">About</Link></li>
               <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/blog">Blog</Link></li>
               {
-                   user?.[0]?.uid? <>   <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/manage">Manage Product</Link></li><li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/addproduct">Add Product</Link></li> </> :<> </>
+                   user?.[0]?.uid? <>  
+                    <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/manage">Manage Product</Link></li>
+                    <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/addproduct">Add Product</Link></li> 
+                    <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/myitems">my Items</Link></li> 
+                    </> :<> </>
               
                }
             

@@ -1,8 +1,26 @@
 
 .service-manage{
-    border: 1px solid rgb(170, 163, 163);
+    border-bottom: 1px solid #dad7d7;
     margin: 5px 5%;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444;
+} 
+.service-manage .left{
+    display: flex;
+    align-items: center;
+    width: 200px;
+} 
+.service-manage .count{
+    display: flex;
+    align-items: center; 
+    flex-grow: 1;
+}
+.service-manage img{
+    width: 40px;
+    height: 40px;
 }
 
 .add-new-product-div{
@@ -20,3 +38,20 @@
     background-color: crimson;
     margin: 30px 0;
 } 
+.trash-btn{
+    border: none;
+    /* padding: 5px 10px; */
+    padding: 2px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+} 
+.trash-btn .fa{
+    color: crimson;
+} 
+.count .price{
+    margin-right: 10px;
+} 
+.left .img-name{
+    margin-right: 10px;
+}

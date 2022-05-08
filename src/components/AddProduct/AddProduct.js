@@ -1,6 +1,10 @@
 import React from 'react';
-import './AddProduct.css'
-const AddProduct = () => { 
+import { useAuthState } from 'react-firebase-hooks/auth';
+import './AddProduct.css' 
+import auth from '../../firebase.init';
+const AddProduct = () => {  
+  const user=useAuthState(auth)  
+  const email=user[0].email;
     const addProductForm=(e)=>{ 
         e.preventDefault()
         const name=e.target.name.value 
@@ -9,8 +13,9 @@ const AddProduct = () => {
         const img=e.target.img.value 
         const suplier=e.target.suplier.value
         const quantity=e.target.quantity.value 
-        const product={name,price,description,img,suplier,quantity}
-        console.log(product); 
+        const product={name,price,description,img,suplier,quantity,email}
+        console.log(product);  
+        
         // const url=`http://localhost:3000/product` 
         // fetch(url,{
         //     method:"POST",
@@ -30,7 +35,7 @@ const AddProduct = () => {
 
 
 // test 
-fetch('http://localhost:5000/product', {
+fetch('https://enigmatic-lowlands-82160.herokuapp.com/product', {
   method: 'POST',
   body: JSON.stringify(product),
   headers: {

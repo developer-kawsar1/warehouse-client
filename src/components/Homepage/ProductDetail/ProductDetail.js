@@ -3,29 +3,39 @@ import { Link, useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
 const ProductDetail = () => {  
-    const [product,setProduct]=useState({})  
+    const [product,setProduct]=useState({})   
+
+    let [count,setCount]=useState(0)
+  
     const {id}=useParams()
     useEffect(()=>{
-        const url=`http://localhost:5000/product/${id}`  ;
+        const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ; 
+        
         fetch(url)
         .then(res=>res.json())
-        .then(data=>setProduct(data))
+        .then(data=>{
+            setProduct(data)  
+           setCount(product.quantity)
+            
+        })
     },[]) 
 
 
 
 const deliverbtnClick=()=>{
-  
-    const url=`http://localhost:5000/product/${id}`  ;
+     setCount(count+1)
+    const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ;
     fetch(url, {
         method: 'PUT',
-        body: JSON.stringify({quantity:1000}),
+        body: JSON.stringify({quantity:99}),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
       })
         .then((response) => response.json())
-        .then((data) => setProduct(product)); 
+        .then((data) => {
+            // setCount(product.quantity)
+            console.log(data)}); 
         
 }
     
@@ -52,7 +62,7 @@ const deliverbtnClick=()=>{
                      </tr>
                      <tr>
                          <td>Quantity</td> 
-                         <td>{product.quantity} KG</td>
+                         <td>{count} </td>
                      </tr>
                      <tr>
                          <td>Supplier</td> 
