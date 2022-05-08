@@ -3,12 +3,16 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import auth from '../../../firebase.init';
+import { signOut } from 'firebase/auth';
 const Header = () => {   
     const user =useAuthState(auth) 
     console.log(user[0]?.uid);
     const [click,setClick]=useState(false) 
     const handelClick=() => {
         setClick(!click) 
+      } 
+      const anotherClick=()=>{
+        signOut(auth); 
       }
     return (
         <div>
@@ -25,9 +29,11 @@ const Header = () => {
                     <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/manage">Manage Product</Link></li>
                     <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/addproduct">Add Product</Link></li> 
                     <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/myitems">my Items</Link></li> 
-                    </> :<> </>
+                    <li className='nav-item' onClick={handelClick}><span onClick={anotherClick}>sign Out</span></li> 
+                    </> :<>  <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="/login">Log In</Link></li></>
               
                }
+             
             
               {/* <li className='nav-item'><Link onClick={handelClick} className='nav-links' to="login">Login</Link></li>  */}
               

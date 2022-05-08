@@ -14,7 +14,8 @@ const AddProduct = () => {
         const suplier=e.target.suplier.value
         const quantity=e.target.quantity.value 
         const product={name,price,description,img,suplier,quantity,email}
-        console.log(product);  
+        console.log(product);   
+        e.target.reset()
         
         // const url=`http://localhost:3000/product` 
         // fetch(url,{
