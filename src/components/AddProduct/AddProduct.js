@@ -35,7 +35,7 @@ const AddProduct = () => {
 
 
 // test 
-fetch('https://enigmatic-lowlands-82160.herokuapp.com/product', {
+fetch('http://localhost:5000/product', {
   method: 'POST',
   body: JSON.stringify(product),
   headers: {

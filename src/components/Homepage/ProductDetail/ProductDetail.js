@@ -3,31 +3,35 @@ import { Link, useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
 const ProductDetail = () => {  
-    const [product,setProduct]=useState({})   
-
-    let [count,setCount]=useState(0)
+    const [product,setProduct]=useState({}) 
+    const [counter,setCounter]=useState(0)  
+     
+     
   
     const {id}=useParams()
     useEffect(()=>{
-        const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ; 
+        const url=`http://localhost:5000/product/${id}`  ; 
         
         fetch(url)
         .then(res=>res.json())
         .then(data=>{
             setProduct(data)  
-           setCount(product.quantity)
+        //    setCount(product.quantity) 
+       
             
         })
     },[]) 
 
 
 
-const deliverbtnClick=()=>{
-     setCount(count+1)
-    const url=`https://enigmatic-lowlands-82160.herokuapp.com/product/${id}`  ;
+const deliverbtnClick=()=>{ 
+    setCounter(product.quantity-1) 
+    console.log(counter);
+    //  setCount(count)
+    const url=`http://localhost:5000/product/${id}`  ;
     fetch(url, {
         method: 'PUT',
-        body: JSON.stringify({quantity:99}),
+        body: JSON.stringify({quantity:counter}),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
@@ -36,6 +40,9 @@ const deliverbtnClick=()=>{
         .then((data) => {
             // setCount(product.quantity)
             console.log(data)}); 
+
+            // alert("alert")
+           
         
 }
     
@@ -61,8 +68,8 @@ const deliverbtnClick=()=>{
                          <td>{product.description}</td>
                      </tr>
                      <tr>
-                         <td>Quantity</td> 
-                         <td>{count} </td>
+                         <td>Quantity is</td> 
+                         <td>{product.price} </td>
                      </tr>
                      <tr>
                          <td>Supplier</td> 
